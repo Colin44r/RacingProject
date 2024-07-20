@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca334dae3de4fa244baeb91456575b6d, type: 3}
+  m_Name: CarConfig_Player
+  m_EditorClassIdentifier: 
+  mMaxTorque: 1000
+  mMaxSteerAngle: 20
+  mSpoilerRatio: 0.1
+  mMaxAntiRollForce: 50000
+  mTireRPM: 1.5
+  mBrakingTorque: 500
+  mMaxSpeed: 80
+  mMaxReverseSpeed: -50
+  mHandBreakFowardStiffness: 0.4
+  mHandBreakSidewayStiffness: 0.86
+  mSlipThreshold: 0.6
+  mPlacementOffset: 0.01
+  mWaypointDistance: 7
+  mBrakingOffSet: 6
+  mBrakingDistance: 2
+  mSpacingDistance: 2
+  mSpacingOffSet: 1
+  mCenterOfMassOffset: {x: 0, y: -1, z: 0}
