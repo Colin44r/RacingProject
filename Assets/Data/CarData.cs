@@ -11,7 +11,7 @@ public class CarData : ScriptableObject
     [SerializeField] private float mBrakingTorque = 0;
     [SerializeField] private float mMaxSpeed = 0;
     [SerializeField] private float mMaxReverseSpeed = 0;
-    [SerializeField] private float mHandBreakFowardStiffness =0 ;
+    [SerializeField] private float mHandBreakForwardStiffness =0 ;
     [SerializeField] private float mHandBreakSidewayStiffness =0;
     [SerializeField] private float mSlipThreshold = 0;
     [SerializeField] private float mPlacementOffset = 0;
@@ -32,7 +32,7 @@ public class CarData : ScriptableObject
     public float BrakingTorque => mBrakingTorque;
     public float MaxSpeed => mMaxSpeed;
     public float MaxReverseSpeed => mMaxReverseSpeed;
-    public float HandBreakFowardStiffness => mHandBreakFowardStiffness ;
+    public float HandBreakFowardStiffness => mHandBreakForwardStiffness ;
     public float HandBreakSidewayStiffness => mHandBreakSidewayStiffness ;
     public float SlipThreshold => mSlipThreshold;
     public float PlacementOffset => mPlacementOffset;

@@ -7,6 +7,7 @@ public class Cars : CarController
     private const string HORIZONTAL = "Horizontal";
     private const string HANDBRAKE = "HandBrake";
     private const float WHEEL_STIFFNESS = 1.0f;
+    [SerializeField] private Camera mMainCamera;
 
     [SerializeField] Texture2D mSpeedometer;
     [SerializeField] Texture2D mNeedle;
@@ -17,9 +18,11 @@ public class Cars : CarController
     private float mWidth= 300;
     private float mHeightOffset = 150;
     private float mHeight= 150;
+    private float mMinFOV = 60;
+    private float mMaxFOV = 90;
    
 
-
+    
 
 
     private void OnGUI() 
@@ -61,7 +64,7 @@ public class Cars : CarController
             }
         }
 
-
+        mMainCamera.fieldOfView = Mathf.Clamp(mCurrentSpeed, mMinFOV, mMaxFOV); 
 
         if (RaceManager.Instance.GameStart == true)
         {
