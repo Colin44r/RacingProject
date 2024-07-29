@@ -27,7 +27,7 @@ public class Hud : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = 10;
+        timer = 0;
         timerText.text = timer.ToString();
         score = 0;
         scoreAmount.text = score.ToString();
@@ -50,7 +50,7 @@ public class Hud : MonoBehaviour
         //   healthAmount.value = health; 
         //}
 
-        timer -= Time.deltaTime;
+        timer += Time.deltaTime;
 
         if (timer <= 0)
         {
