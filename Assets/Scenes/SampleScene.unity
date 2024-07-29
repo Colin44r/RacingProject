@@ -9607,7 +9607,7 @@ Transform:
   m_GameObject: {fileID: 240799959}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000003932233, y: 0.028269362, z: -0.00013931667, w: -0.9996004}
-  m_LocalPosition: {x: 646.55, y: 50.42, z: 491.48}
+  m_LocalPosition: {x: 646, y: 50.42, z: 492.41}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42885,8 +42885,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134186534}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.047843233, z: -0, w: 0.9988549}
-  m_LocalPosition: {x: 667.85, y: 50.79, z: 502.23}
+  m_LocalRotation: {x: -0, y: 0.117510654, z: -0, w: 0.9930717}
+  m_LocalPosition: {x: 649.98, y: 50.79, z: 504.26}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42894,7 +42894,7 @@ Transform:
   - {fileID: 790717116}
   - {fileID: 930450981}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 5.485, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 13.497, z: 0}
 --- !u!114 &1134414855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42923,7 +42923,6 @@ MonoBehaviour:
   mBrakeLightContainer: {fileID: 424139162}
   mIdleEngineAudioSource: {fileID: 1134414858}
   mAccelerationAudioSource: {fileID: 1134414859}
-  mMainCamera: {fileID: 963194227}
   mSpeedometer: {fileID: 2800000, guid: 379de57c4dbad5e4f87edd390a296dad, type: 3}
   mNeedle: {fileID: 2800000, guid: c277ecae436a9a643a59bf8d69024a35, type: 3}
   mRearCamera: {fileID: 434155779}

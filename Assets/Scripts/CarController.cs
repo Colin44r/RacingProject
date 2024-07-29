@@ -26,7 +26,6 @@ public class CarController : MonoBehaviour
     protected bool mHandBraking = false;
     protected bool mBraking = false;
     protected bool mReversing = false;
-    protected bool mRaceStarted = false;
 
     protected Renderer[] mBrakeLightRenderers;
     protected Texture2D mLightIdleTex;
@@ -41,17 +40,6 @@ public class CarController : MonoBehaviour
         LoadBrakeTextures();
 
     }
-
-    protected void OnEnable()
-    {
-        Actions.StartRace += StartRaceTwo;
-    }
-
-    protected void OnDisable()
-    {
-        Actions.StartRace -= StartRaceTwo;
-    }
-    protected void StartRaceTwo() { mRaceStarted = true; }
 
     private void GetBrakeLightRenderers()
     {

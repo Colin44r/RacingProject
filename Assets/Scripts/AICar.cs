@@ -61,7 +61,6 @@ public class AICar : CarController
 
 
         }
-      //                                        Vector3.Distance(Car[i], CheckPoint[currentCheckpoint]);
 
     }
 
@@ -182,7 +181,7 @@ public class AICar : CarController
         var carRightSide = origin + (transform.right * mCarConfig.SpacingOffSet);
         var carLeftSide = origin + (-transform.right * mCarConfig.SpacingOffSet);
         Debug.DrawRay(carRightSide, transform.right * mCarConfig.SpacingDistance);
-        Debug.DrawRay(carLeftSide, -transform.right * mCarConfig.SpacingDistance);
+        Debug.DrawRay(carRightSide, -transform.right * mCarConfig.SpacingDistance);
 
         if (Physics.Raycast(carRightSide, transform.right, out RaycastHit hit, mCarConfig.SpacingDistance))
         {
@@ -192,7 +191,7 @@ public class AICar : CarController
 
         if (Physics.Raycast(carLeftSide, -transform.right, out hit, mCarConfig.SpacingDistance))
         {
-            steerAdjust += 1 + (carLeftSide - hit.point).magnitude / mCarConfig.SpacingDistance;
+            steerAdjust += -1 + (carLeftSide - hit.point).magnitude / mCarConfig.SpacingDistance;
 
         }
         return steerAdjust;

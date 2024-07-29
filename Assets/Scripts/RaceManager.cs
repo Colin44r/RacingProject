@@ -163,7 +163,7 @@ public class RaceManager : MonoBehaviour
             case 3: return mDigitThreeImage;
             case 2: return mDigitTwoImage;
             case 1: return mDigitOneImage;
-            case 0: mGameStart = true; /*Actions.StartRace?.Invoke(); */ return mStartRaceImage;
+            case 0: mGameStart = true;  return mStartRaceImage;
                 default: return null;
              
         }
