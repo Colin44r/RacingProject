@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Hud hud;
     [SerializeField] private GameObject goldCoins;
-    [SerializeField] private Transform[] spawnPoints;
+   // [SerializeField] private Transform[] spawnPoints;
 
     private int spawnPoint = 0;
 
