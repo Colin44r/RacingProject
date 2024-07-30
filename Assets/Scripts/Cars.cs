@@ -11,7 +11,8 @@ public class Cars : CarController
     [SerializeField] Texture2D mSpeedometer;
     [SerializeField] Texture2D mNeedle;
     [SerializeField] GameObject mRearCamera;
-   
+    [SerializeField] private AudioSource GoldSFX;
+
 
     private float mWidthOffset = 300;
     private float mWidth= 300;
@@ -159,4 +160,18 @@ public class Cars : CarController
 
         base.Update();
     }
+
+
+    private void OnTriggerEnter(Collider collision)
+    {
+       
+        if (collision.gameObject.tag == "GoldCoins")
+        {
+            Debug.Log(collision.gameObject.name);
+            GoldSFX.Play();
+            collision.gameObject.SetActive(false);
+        }
+
+    }
+
 }

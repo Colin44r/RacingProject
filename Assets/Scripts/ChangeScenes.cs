@@ -13,4 +13,9 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void LoadGarage()
+    {
+        SceneManager.LoadScene(3);
+    }
+
 }
