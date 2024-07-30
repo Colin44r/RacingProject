@@ -12,13 +12,16 @@ public class Cars : CarController
     [SerializeField] Texture2D mNeedle;
     [SerializeField] GameObject mRearCamera;
     [SerializeField] private AudioSource GoldSFX;
+    [SerializeField] private Camera mMainCamera;
 
 
     private float mWidthOffset = 300;
     private float mWidth= 300;
     private float mHeightOffset = 150;
     private float mHeight= 150;
-   
+    private float mMinFOV = 60;
+    private float mMaxFOV = 90;
+
 
 
 
@@ -38,7 +41,7 @@ public class Cars : CarController
 
     new private void Update()
     {
-       
+      
         var localVelocity = transform.InverseTransformDirection(mRigidbody.velocity);
 
         //convert from m/s to km/h
@@ -155,8 +158,8 @@ public class Cars : CarController
             mRearCamera.SetActive(false);
 
         }
-        
 
+        mMainCamera.fieldOfView = Mathf.Clamp(mCurrentSpeed, mMinFOV, mMaxFOV);
 
         base.Update();
     }

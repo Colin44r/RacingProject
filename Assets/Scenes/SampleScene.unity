@@ -86075,6 +86075,7 @@ MonoBehaviour:
   mNeedle: {fileID: 2800000, guid: c277ecae436a9a643a59bf8d69024a35, type: 3}
   mRearCamera: {fileID: 434155779}
   GoldSFX: {fileID: 5587529459165353292}
+  mMainCamera: {fileID: 963194227}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
