@@ -32,7 +32,7 @@ public class GarageColorChange : MonoBehaviour
 
     }
 
-    public void ChangeSwordPartColour()
+    public void ChangeCarColor()
     {
         mColorValue = mSlider.value;
 
